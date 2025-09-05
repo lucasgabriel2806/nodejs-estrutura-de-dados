@@ -1,24 +1,29 @@
 const MeuArray = require("./../ex01/MeuArray.js");
 
+
+
+
 // Requisitos
-const recursos_humanos = new MeuArray();
+// const recursos_humanos = new MeuArray();
 
-recursos_humanos.adicionar("Lucas");
-recursos_humanos.adicionar("João");
-recursos_humanos.adicionar("Giovani");
-recursos_humanos.adicionar("Matheus");
+// console.log(recursos_humanos.tamanhoArray());
 
-console.table(recursos_humanos);
+// recursos_humanos.adicionar("Lucas");
+// recursos_humanos.adicionar("João");
+// recursos_humanos.adicionar("Giovani");
+// recursos_humanos.adicionar("Matheus");
 
-console.log("3º Funcionário: " + recursos_humanos.obterElemento(2));
+// console.table(recursos_humanos);
 
-const tamanho_array = recursos_humanos.tamanhoArray();
+// console.log("3º Funcionário: " + recursos_humanos.obterElemento(2));
 
-for (let i = 0; i < tamanho_array; i++) {
-    recursos_humanos.remover();
-}
+// const tamanho_array = recursos_humanos.tamanhoArray();
 
-console.table(recursos_humanos);
+// for (let i = 0; i < tamanho_array; i++) {
+//     recursos_humanos.remover();
+// }
 
-// Perguntas
-console.log(recursos_humanos.items[0]);
+// console.table(recursos_humanos);
+
+// // Perguntas
+// console.log(recursos_humanos.items[0]);

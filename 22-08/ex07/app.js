@@ -1,14 +1,11 @@
 const Funcionario = require('./Funcionario');
-const Gerente = require('./Gerente');
 const Desenvolvedor = require('./Desenvolvedor');
+const Gerente = require('./Gerente');
 
-const gerente = new Gerente();
-const desenvolvedor = new Desenvolvedor();
 const funcionario = new Funcionario('João', 0);
+const desenvolvedor = new Desenvolvedor();
+const gerente = new Gerente();
 
-
+console.log(funcionario.calcularBonus());
 console.log(desenvolvedor.calcularBonus());
-
 console.log(gerente.caulcularBonus());
-
-// ex05, ex06, ex07

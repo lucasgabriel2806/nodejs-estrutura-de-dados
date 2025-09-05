@@ -6,7 +6,7 @@ class Carro {
 
     }
 
-    acelerar(velocidade) {
+    acelerarCarro(velocidade) {
 
         this.velocidade += velocidade;
 
@@ -24,7 +24,7 @@ class Moto {
 
     }
 
-    acelerar(velocidade) {
+    acelerarMoto(velocidade) {
 
         this.velocidade += velocidade;
 

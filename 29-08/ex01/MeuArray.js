@@ -1,5 +1,7 @@
 class MeuArray {
 
+    #teste = 0;
+
     constructor() {
 
         // Criando um array vazio
