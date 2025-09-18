@@ -35,9 +35,25 @@ class Pilha {
 
     verTopo() {
 
+        if(this.tamanho < 1) {
+
+            return undefined;
+
+        }
+
+        return this.pilha[this.tamanho - 1];
+
     }
 
     verFeiticos() {
+
+        if(this.pilha < 1) {
+
+            return undefined;
+
+        }
+
+        return this.pilha[this.pilha];
 
     }
 
