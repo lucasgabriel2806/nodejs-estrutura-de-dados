@@ -1,57 +1,68 @@
-class Pilha 
-{
+class Pilha {
 
-    constructor() 
-    {
+    #items = [];
+    #tamanho = 0;
 
-        this.pilha = [];
+    // Adiciona um elemento para a última posição
+    adicionar(elemento) {
 
-        this.tamanho = 0;
+        this.#items[this.#tamanho] = elemento;
 
-    }
-
-    adicionar(elemento) 
-    {
-
-        this.pilha[this.tamanho] = elemento;
-
-        this.tamanho++;
+        this.#tamanho++;
 
     }
 
-    removerUltimo() 
-    {
+    // Remove o último elemento da pilha
+    remover() {
 
-        delete this.pilha[this.tamanho - 1];
-
-    }
-
-    verUltimo() 
-    {
-
-        if(this.tamanho < 1)
-        {
-
+        if(this.#tamanho === 1) {
             return undefined;
-
         }
 
-        return this.pilha[this.tamanho - 1];
+        // Fazendo uma cópia do último feitiço
+        const ultimoItem = this.#items[this.#tamanho - 1];
+
+        delete this.#items[this.#tamanho - 1];
+
+        this.#tamanho--;
+
+        return ultimoItem;
 
     }
 
-    verBau()
-    {
+    topo() {
 
-        if(this.tamanho < 1)
-        {
-
+        if(this.#tamanho === 0) {
             return undefined;
-
         }
 
-        return this.pilha;
+        return this.#items[this.#tamanho - 1];
 
     }
+
+    limpar() {
+        
+        this.#items = [];
+        this.#tamanho = 0;
+
+    }
+
+    estaVazia = () => this.#tamanho === 0;
+
+    tamanhoPilha = () => this.#tamanho;
+
+    // verFeiticos() {
+
+    //     if(this.pilha < 1) {
+
+    //         return undefined;
+
+    //     }
+
+    //     return this.pilha[this.pilha];
+
+    // }
 
 }
+
+module.exports = Pilha;
