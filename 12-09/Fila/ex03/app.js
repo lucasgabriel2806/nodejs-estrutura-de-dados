@@ -2,15 +2,14 @@ const Fila = require('./Fila.js');
 
 const brinquedo = new Fila();
 
-setTimeout(() => brinquedo.enqueue("Visitante 1"), 2000);
+brinquedo.enqueue("-- 1 --");
+brinquedo.enqueue("-- 2 --");
+brinquedo.enqueue("-- 3 --");
+brinquedo.enqueue("-- 4 --");
+console.log("Desembarcando: " + brinquedo.dequeue());
 
-brinquedo.dequeue();
+setTimeout(() => console.log("Desembarcando: " + brinquedo.dequeue()), 3000);
 
-setTimeout(() => brinquedo.enqueue("Visitante 1"), 2000);
+setTimeout(() => console.log("Desembarcando: " + brinquedo.dequeue()), 3000);
 
-
-brinquedo.dequeue();
-
-brinquedo.enqueue("Visitante 3");
-
-brinquedo.dequeue();
+setTimeout(() => console.log("Desembarcando: " + brinquedo.dequeue()), 3000);""
