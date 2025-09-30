@@ -21,9 +21,9 @@ console.log(`Tamanho da lista: ${lista.size()}`); // Saída: Tamanho da lista: 3
 console.log("\n---------------------");
 console.log('\x1b[32m%s\x1b[0m', 'Inserindo no fim:');
 lista.insertAtEnd(40);
-lista.toString() // Saída: 10 -> 20 -> 30 -> 40 -> undefinded
+lista.toString(); // Saída: 10 -> 20 -> 30 -> 40 -> undefinded
 lista.insertAtEnd(50);
-lista.toString() // Saída: 10 -> 20 -> 30 -> 40 -> 50 -> undefinded
+lista.toString(); // Saída: 10 -> 20 -> 30 -> 40 -> 50 -> undefinded
 console.log(`Tamanho da lista: ${lista.size()}`); // Saída: Tamanho da lista: 5
 
 
@@ -31,5 +31,14 @@ console.log("\n---------------------");
 console.log('\x1b[32m%s\x1b[0m', 'Exibindo a lista:');
 lista.toString(); // Saída: 10 -> 20 -> 30 -> 40 -> 50 -> undefined
 
+
 console.log("\n---------------------");
 console.log('\x1b[31m%s\x1b[0m', 'Removendo Itens:');
+// Removendo um valor
+lista.removeByValue(30);
+lista.toString(); // Saída: 10 -> 20 -> 30 -> 40 -> 50 -> undefinded
+
+console.log("\n---------------------");
+console.log('\x1b[34m%s\x1b[0m', 'Procurando um valor:');
+let node = lista.find(40);
+console.log(node ? `Valor encontrado: ${node.value}` : "Valor não encontrado");
