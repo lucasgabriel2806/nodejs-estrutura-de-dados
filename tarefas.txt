@@ -4,9 +4,13 @@ fazer
 
 
 feito
+
 1, 2, 3, 4, 7, 8, 
 
+19-09 (LinkedList)
 
+26-09 (Dicionários)
+    1, 3
 
 atual:
 Fila, ex02, ex03

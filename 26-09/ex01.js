@@ -1,6 +1,3 @@
-console.log("\n=== EXERCÍCIO 1 ===\n");
-console.log("OBJETO DE ALUNOS\n");
-
 // Objeto para armazenar informações de alunos
 const alunos = {};
 
