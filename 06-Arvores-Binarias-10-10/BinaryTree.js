@@ -77,7 +77,7 @@ class BinaryTree {
     }
 
     // Método para buscar um valor na árvore
-    searc(value) {
+    search(value) {
         return this._searchNode(this.root, value); // Inicia a busca a partir da raiz
     }
 

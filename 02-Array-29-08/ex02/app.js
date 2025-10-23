@@ -1,4 +1,4 @@
-const MeuArray = require("./../ex01/MeuArray.js");
+const MeuArray = require("../ex01/MeuArray.js");
 
 
 
