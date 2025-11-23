@@ -45,7 +45,7 @@ class Buscas {
 
             const pos = inicio + Math.floor(
                 ((valorProcurado - arr[inicio]) * (fim - inicio)) / 
-                (arr[fim]) - arr[inicio]
+                (arr[fim] - arr[inicio])
             );
 
             if (arr[pos] === valorProcurado) {
